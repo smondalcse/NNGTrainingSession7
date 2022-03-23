@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Log.i(TAG, "onCreate: Changed from git user");
+
         ActionBar toolsbar = getSupportActionBar();
         toolsbar.setTitle("Login");
         toolsbar.hide();
