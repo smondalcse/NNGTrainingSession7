@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:src="@drawable/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/aclonica"
+            android:text="NNG Training Session"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <EditText
+        android:text="123"
+        android:layout_marginTop="50dp"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:hint="Enter EmpID"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="@color/gray"
+        android:id="@+id/et_empid"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <EditText
+        android:text="321"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:padding="10dp"
+        android:hint="Enter Password"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="@color/gray"
+        android:id="@+id/et_password"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <LinearLayout
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:text="Male"
+                android:checked="true"
+                android:buttonTint="#E64A19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:text="FeMale"
+                android:buttonTint="#E64A19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:text="Login"
+        android:textSize="20sp"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="@color/white"
+        android:textAllCaps="false"
+        android:layout_margin="40dp"
+        android:layout_width="match_parent"
+        android:minHeight="60dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnSharedPreference"
+        android:text="Shared Preference"
+        android:textSize="20sp"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="@color/white"
+        android:textAllCaps="false"
+        android:layout_margin="40dp"
+        android:layout_width="match_parent"
+        android:minHeight="60dp"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
